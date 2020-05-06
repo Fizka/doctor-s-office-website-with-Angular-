@@ -1,1 +1,187 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+
+html{
+  padding: 0px;
+  background: dimgrey;
+}
+
+#kontener{
+  width: 100%;
+  margin: 0px;
+  background: dimgrey;
+  font-family: "Segoe Print" ;
+  padding: 0px;
+  font-size: 10px;
+}
+
+#naglowek{
+  background: dimgrey;
+  margin : 0px;
+  padding: 0px;
+  box-shadow: -5px -5px 15px black;
+}
+
+#srodek {
+  margin-top: 0px;
+  padding: 50px;
+}
+
+#menu{
+  margin-top: 5px;
+  text-align: justify;
+  background: dimgrey;
+  margin-right: 50px;
+
+}
+
+#menu ul{
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#menu li{
+  display: inline-grid ;
+  width: 25%;
+  padding: 5px;
+  font-style: italic;
+  font-size: 200%;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  background:#c1cbc3;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "Segoe Print";
+  padding: 4px;
+  height: 40px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+
+}
+
+#menu a:hover{
+  color: white;
+  background: #888;
+}
+
+#tresc {
+  background: #c1cbc3;
+  min-height: 350px;
+  padding:  20px;
+  text-align: justify;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.lista{
+  background: dimgrey;
+  color: black;
+}
+
+#lista{
+  background: #c1cbc3;
+  padding: 10px;
+}
+
+#lista li{
+  display: inline-grid;
+  padding: 10px;
+  width: 50%;
+}
+
+#lista ul{
+width: 100%;
+  padding: 10px;
+
+}
+
+#lista a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+  font-weight: bold;
+  height: 40px;
+  background: dimgrey;
+
+}
+
+
+.srdbtt {
+  text-align: center;
+  padding: 10px;
+}
+
+.srdbtt a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  height: 40px;
+  font-weight: bold;
+  background: dimgrey;
+}
+
+#tresc p{
+  font-size: 18px;
+  color: black;
+  padding: 15px;
+}
+
+#tresc h3{
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+#tresc h1{
+  font-size: 26px;
+  color: black;
+  text-align: center;
+}
+
+#tresc li{
+  color: black;
+}
+
+#stopka{
+  clear: both;
+  background: dimgrey;
+  color: black;
+  text-align: center;
+  padding: 3px;
+}
+
+.imgprof{
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and  (max-width: 600px){
+
+  html{
+    background: blueviolet;
+  }
+
+  #menu{
+    height: 0;
+    width: 100%;
+    padding: 0;
+    visibility: collapse;
+  }
+
+  #tresc{
+    clear: both;
+    margin-left: 0;
+  }
+
+  #kontener{
+    min-width: 320px;
+  }
+
+
+}

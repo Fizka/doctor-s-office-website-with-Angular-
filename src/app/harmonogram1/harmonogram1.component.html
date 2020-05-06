@@ -1,0 +1,21 @@
+<h2>Employee Details</h2>
+
+<hr/>
+<div *ngIf="wizyta">
+  <div>
+    <label><b>First Name: </b></label> {{wizyta.rodzaj}}
+  </div>
+  <div>
+    <label><b>Last Name: </b></label> {{wizyta.lekarz}}
+  </div>
+  <div>
+    <label><b>Email Id: </b></label> {{wizyta.data}}
+  </div>
+  <div>
+    <label><b>Email Id: </b></label> {{wizyta.opis}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Employee List</button><br>

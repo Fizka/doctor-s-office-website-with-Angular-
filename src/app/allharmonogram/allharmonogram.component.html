@@ -1,0 +1,29 @@
+<div id="harmo">
+<h2>Harmonogram Przychodni</h2> <br/>
+<div class="panel-body">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Data</th>
+      <th>lekarz</th>
+      <th>Rodzaj</th>
+      <th>Opis</th>
+      <th>Dostępnośc</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let wizyta of wizyty | async">
+      <td>{{wizyta.dzienTygodnia}} : {{wizyta.data}}</td>
+      <td>{{wizyta.lekarz}}</td>
+      <td>{{wizyta.rodzaj}}</td>
+      <td>{{wizyta.opis}}</td>
+      <td><button (click)="GiveUpVisit(wizyta.id)" class="btn btn-danger">Odwołaj Rezerwacje</button>
+        <button (click)="DetalisVisit(wizyta.id)" class="btn btn-info" style="margin-left: 10px"> Szczegóły</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
